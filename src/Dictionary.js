@@ -27,8 +27,8 @@ function handleResponse(response){
  <div className="Dictionary">
 <h1>Dictionary</h1>
 <form onSubmit={handleSubmit}>
-<input type="search" onChange={updateKeyWord}/>
-<input type= "submit" value="search"/>
+<input type="search" onChange={updateKeyWord} className="searchForm"/>
+<input type= "submit" value="search" className="submitButton"/>
 </form>
 <Results results={results}/>
 </div>

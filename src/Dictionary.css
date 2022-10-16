@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
+
+.Dictionary{
+    font-family: poppins;
+}
 h1 {
     text-align: center;
 }
@@ -5,5 +10,20 @@ h1 {
 form{
     display: flex;
     justify-content: center;
-    
 }
+
+.searchForm {
+    border-color: #ff5468;
+    border-radius: 25px;
+    border-style: solid;
+    padding: 5px;
+  }
+  
+  .submitButton {
+    background-color: #ff5468;
+    color: white;
+    border-color: white;
+    border-radius: 25px;
+    border-style: solid;
+    padding: 5px;
+  }
