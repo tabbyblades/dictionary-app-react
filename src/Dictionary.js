@@ -31,6 +31,8 @@ function handleResponse(response){
 <input type= "submit" value="search" className="submitButton"/>
 </form>
 <Results results={results}/>
+<p className="text-center mt-3">Coded by Tabby Blades and open-sourced on <a href="https://github.com/tabbyblades/dictionary-app-react" target="_blank" rel="noopener noreferrer">
+    Github</a></p>
 </div>
     );
 }
