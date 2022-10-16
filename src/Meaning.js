@@ -6,12 +6,12 @@ export default function Meaning(props){
     <h3>
         {props.meanings.partOfSpeech}
     </h3>
-    <p>
-        {props.meanings.definitions[0].definition}
-    </p>
-<p>
-        {props.meanings.definitions[0].example}
-    </p>
-</div>
-    );
-}
+   {props.meanings.definitions.map(function(definition,index){
+    return(
+        <div key={index}>
+            <p>{definition.definition}
+            <br/>
+            <em>{definition.example}</em>
+            </p>
+            </div>);
+        })}</div>);}
