@@ -15,9 +15,17 @@ axios.get(apiUrl).then(handleResponse);
 search();
 }
 
+function handlePexelsResponse (response){
+    console.log(response.data);
+}
 function search(){
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${KeyWord}`;
 axios.get(apiUrl).then(handleResponse);
+
+let PexelsApiKey ="563492ad6f91700001000001d06d6f6c1add4870b22ff6279ac483b3";
+let PexelsApiUrl = `https://api.pexels.com/v1/search?query=${KeyWord}&per_page=1`
+let headers = { Authorization: `Bearer ${PexelsApiKey}`};
+axios.get(PexelsApiUrl, {headers:headers}).then (handlePexelsResponse);
 }
 
 function updateKeyWord (event){
