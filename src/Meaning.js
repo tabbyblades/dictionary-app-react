@@ -5,9 +5,9 @@ import "./Dictionary.css"
 export default function Meaning(props){
     return(
 <div className="meaning">
-    <h3>
+    <h2>
         {props.meanings.partOfSpeech}
-    </h3>
+    </h2>
    {props.meanings.definitions.map(function(definition,index){
     return(
         <div key={index}>

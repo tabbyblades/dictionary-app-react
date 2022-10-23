@@ -1,11 +1,10 @@
 import React from "react";
+import "./Dictionary.css";
 
 export default function Phonetics (props){
 return(
         <div className="phonetics">
-            <a href={props.phonetic.audio} target="_blank" rel="noreferrer"> Listen </a>
-            <br />
-            {props.phonetic.text}
+            {props.phonetic.text} <a href={props.phonetic.audio} target="_blank" rel="noreferrer"> listen 🔊 </a>
         </div>
     );
 }
