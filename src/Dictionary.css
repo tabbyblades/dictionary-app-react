@@ -2,6 +2,11 @@
 
 .Dictionary{
     font-family: poppins;
+    max-width: 960px;
+    margin: 0 auto;
+    border: 5px solid #ff5468;
+    border-radius: 25px;
+    padding: 10px;
 }
 h1 {
     text-align: center;
@@ -10,6 +15,10 @@ h1 {
 
 h2{
     color:#ff5468 ;
+}
+
+h3{
+    color: #ff5468;
 }
 
 form{

@@ -3,10 +3,11 @@ import "./Dictionary.css";
 import axios from "axios";
 import Results from "./Results";
 import Photos from "./Photos";
+import { Container } from "react-bootstrap";
 
 
 export default function Dictionary(){
-    let [KeyWord, setKeyWord] = useState("smile");
+    let [KeyWord, setKeyWord] = useState("hiking");
     let [results, setResults] = useState(null);
     let [loaded, setLoaded] = useState(false);
     let [photos, setPhotos] = useState(null);
@@ -47,14 +48,14 @@ function load(){
 if(loaded){
     return(
         <div className="Dictionary">
-       <h1>Dictionary</h1>
+       <h1>dictionary</h1>
        <form onSubmit={handleSubmit}>
        <input type="search" onChange={updateKeyWord} className="searchForm"/>
        <input type= "submit" value="search" className="submitButton"/>
        </form>
        <Results results={results}/>
        <Photos photos={photos}/>
-       <p className="text-center mt-3">Coded by Tabby Blades and open-sourced on <a href="https://github.com/tabbyblades/dictionary-app-react" target="_blank" rel="noopener noreferrer">
+       <p className="text-center mt-3">coded by Tabby Blades and open-sourced on <a href="https://github.com/tabbyblades/dictionary-app-react" target="_blank" rel="noopener noreferrer">
            Github</a></p>
        </div>
            );
